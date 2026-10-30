@@ -1,3 +1,4 @@
+# https://contest.yandex.ru/contest/102171/run-report/169892803/
 def hash_poly(s, m, p=31):
     h = 0
     power = 1
