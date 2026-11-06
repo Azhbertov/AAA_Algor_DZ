@@ -1,4 +1,4 @@
-# https://contest.yandex.ru/contest/100803/run-report/168484678/
+# https://contest.yandex.ru/contest/100803/run-report/170735943/
 class Node:
     def __init__(self, key):
         self.key = key
