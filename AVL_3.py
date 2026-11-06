@@ -66,20 +66,7 @@ def insert(root, key):
         root.left = insert(root.left, key)
     else:
         root.right = insert(root.right, key)
-    update(root)
-    bf = balance_factor(root)
-
-    if bf > 1 and key < root.left.key:
-        return rotate_right(root)
-    if bf < -1 and key > root.right.key:
-        return rotate_left(root)
-    if bf > 1 and key > root.left.key:
-        root.left = rotate_left(root.left)
-        return rotate_right(root)
-    if bf < -1 and key < root.right.key:
-        root.right = rotate_right(root.right)
-        return rotate_left(root)
-    return root
+    return balance_check(root)
 
 
 def search(root, key):
